@@ -13,9 +13,9 @@ class Links extends Component {
     ],
   };
 
-  handleClick = name => {
-    this.setState(state => {
-      const menuItems = state.menuItems.map(item => ({
+  handleClick = (name) => {
+    this.setState((state) => {
+      const menuItems = state.menuItems.map((item) => ({
         ...item,
         isActive: item.name === name,
       }));
@@ -25,7 +25,7 @@ class Links extends Component {
   };
 
   render() {
-    const menu = this.state.menuItems.map(item => {
+    const menu = this.state.menuItems.map((item) => {
       const classes = `nav-link-custom${item.isActive ? " active" : ""}`;
       return (
         <NavLink
@@ -34,7 +34,8 @@ class Links extends Component {
           className={classes}
           to={item.route}
           href="#"
-          alt="1">
+          alt="1"
+        >
           {item.name}
         </NavLink>
       );
@@ -50,7 +51,8 @@ class Links extends Component {
           className="nav-link-custom"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.instagram.com/matviets_vladimir_artist/">
+          href="https://instagram.com/tolik_petchenko"
+        >
           <i className="fab fa-instagram"></i>
         </a>
       </div>
