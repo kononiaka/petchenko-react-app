@@ -1,0 +1,18 @@
+.menu-block {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .menu-block {
+    display: block;
+    text-align: right;
+    margin-top: 25px;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 12px;
+  }
+}

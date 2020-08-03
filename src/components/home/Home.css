@@ -1,0 +1,50 @@
+.main {
+  background-image: url("../../img/gray-bridge-and-trees.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.enter-site-btn {
+  font-family: "Sacramento";
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid white;
+  transition: all 0.8s;
+  margin-top: 600px;
+  margin-bottom: 350px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.enter-site-btn:hover {
+  text-decoration: none;
+  color: black;
+  border: 2px solid white;
+  background-color: white;
+}
+.home.nav-link-custom {
+  margin-left: -15px;
+  border-radius: 75%;
+  background-color: #fff;
+  color: #000;
+  opacity: 1;
+}
+
+.home.fab.fa-instagram {
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 4px;
+  padding-top: 8px;
+  font-size: 16px;
+}
+
+.home.fab.fa-instagram:hover {
+  opacity: 1;
+  color: #000;
+}

@@ -1,0 +1,37 @@
+.header {
+  font-family: "Sacramento";
+  margin: 95px 0 33px -30px;
+  font-size: 25px;
+}
+.header-text {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+.header-text:hover {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 1800px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    width: 300px;
+    font-size: 19px;
+  }
+
+  .header-span.disabled {
+    display: none;
+  }
+
+  .header-menu {
+    display: block;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: right;
+  }
+}
