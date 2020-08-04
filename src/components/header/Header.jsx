@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <React.Fragment>
-      <div className="header col-3">
+      <div className="header">
         <Link className="header-text" to="/">
-          MATVIETS &nbsp; VLADIMIR
+          TOLIK &nbsp; PETCHENKO
         </Link>
       </div>
     </React.Fragment>

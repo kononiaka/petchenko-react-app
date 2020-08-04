@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./Works.css";
+import "./Main.css";
 import Gallery from "../gallery/Gallery";
-import Links from "./../links/Links";
-import Header from "./../header/Header";
+import Links from "../links/Links";
+import Header from "../header/Header";
 
 class Works extends Component {
   state = {
@@ -17,7 +17,7 @@ class Works extends Component {
     menuOpen: true,
   };
   handleMenu = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { menuOpen: !prevState.menuOpen };
     });
   };

@@ -5,10 +5,8 @@ import "./Links.css";
 class Links extends Component {
   state = {
     menuItems: [
-      { name: "Works", isActive: false, route: "/works" },
-      { name: "About", isActive: false, route: "/about" },
-      { name: "Exhibition", isActive: false, route: "/exhibition" },
-      { name: "Store", isActive: false, route: "/store" },
+      { name: "Main", isActive: false, route: "/main" },
+      { name: "Gallery", isActive: false, route: "/gallery" },
       { name: "Contact", isActive: false, route: "/contact" },
     ],
   };

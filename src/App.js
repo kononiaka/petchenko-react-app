@@ -4,7 +4,7 @@ import Home from "./components/home/Home";
 import "./fonts/fonts.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Route, Switch, Redirect } from "react-router";
-import Works from "./components/works/Works";
+import Main from "./components/main/Main";
 import About from "./components/about/About";
 import Exhibition from "./components/exhibition/Exhibition";
 import Store from "./components/store/Store.jsx";
@@ -16,7 +16,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <Switch>
-          <Route path="/works" component={Works}></Route>
+          <Route path="/main" component={Main}></Route>
+          <Route path="/gallery" component={Main}></Route>
           <Route path="/contact" component={Contacts}></Route>
           <Route path="/store" component={Store}></Route>
           <Route path="/exhibition" component={Exhibition}></Route>
