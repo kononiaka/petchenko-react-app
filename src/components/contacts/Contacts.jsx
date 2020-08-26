@@ -11,7 +11,7 @@ class Contacts extends Component {
   };
 
   handleMessage = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { messageOpen: !prevState.messageOpen };
     });
   };
@@ -39,8 +39,8 @@ class Contacts extends Component {
             <div className="col text-container">
               <h6 className="general-inquriries">GENERAL INQUIRIES</h6>
               <h6 className="general-inquriries-mail">
-                <a href="mailto:vladimirmatvietsart@gmail.com">
-                  vladimirmatvietsart@gmail.com
+                <a href="mailto:anatoliypetchenko@gmail.com">
+                  anatoliypetchenko@gmail.com
                 </a>
               </h6>
               {messageOpen}

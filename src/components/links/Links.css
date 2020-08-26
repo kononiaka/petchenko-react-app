@@ -8,16 +8,16 @@ h6 {
 
 .nav-link-custom {
   color: black;
-  opacity: 0.8;
   transition: all 0.5s ease;
   font-family: "Sacramento";
   margin: 27px 0 0px 0px;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 17px;
   letter-spacing: 0.2em;
 }
 
 .links {
+  display: flex;
   width: 25%;
   color: black;
 }
@@ -27,23 +27,13 @@ h6 {
   padding-top: 100px;
 }
 
-.nav-link-custom:first-child {
-  padding-top: 40px;
-}
-
-.nav-link-custom:last-child {
-  margin-top: 24px;
-}
-
 .nav-link-custom:hover {
   color: black;
-  opacity: 1;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   text-decoration: none;
 }
 
 .nav-link-custom.active {
-  color: black;
+  color: red;
   font-weight: 600;
 }
 .fab.fa-instagram {

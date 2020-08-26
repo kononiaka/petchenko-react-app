@@ -5,10 +5,11 @@ import "./Links.css";
 class Links extends Component {
   state = {
     menuItems: [
-      { name: "Main", isActive: false, route: "/main" },
+      { name: "", isActive: false, route: "/main" },
       { name: "Gallery", isActive: false, route: "/gallery" },
       { name: "Contact", isActive: false, route: "/contact" },
     ],
+    menuOpen: true,
   };
 
   handleClick = (name) => {
@@ -38,9 +39,6 @@ class Links extends Component {
         </NavLink>
       );
     });
-
-    if (!this.props.show) {
-    }
 
     return (
       <div className="nav flex-column links">
