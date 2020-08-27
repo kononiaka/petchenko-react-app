@@ -17,7 +17,6 @@ class Contacts extends Component {
   };
 
   handleBackdrop = () => {
-    console.log("clicked");
     this.setState({ messageOpen: false });
   };
 

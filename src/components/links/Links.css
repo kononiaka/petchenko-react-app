@@ -15,7 +15,15 @@ h6 {
   font-size: 17px;
   letter-spacing: 0.2em;
 }
-
+.slider {
+  transform: translateX(-175%);
+  transition: transform 0.4s ease-out;
+}
+.slider.open {
+  display: flex;
+  width: 20%;
+  transform: translateX(0);
+}
 .links {
   display: flex;
   width: 25%;
@@ -39,6 +47,7 @@ h6 {
 .fab.fa-instagram {
   font-size: 23px;
 }
+
 @media (max-width: 2048px) {
   .header-menu {
     display: none;

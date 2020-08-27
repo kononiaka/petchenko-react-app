@@ -9,7 +9,6 @@ class Links extends Component {
       { name: "Gallery", isActive: false, route: "/gallery" },
       { name: "Contact", isActive: false, route: "/contact" },
     ],
-    menuOpen: true,
   };
 
   handleClick = (name) => {
@@ -40,17 +39,21 @@ class Links extends Component {
       );
     });
 
+    const toggleClasses = `slider${this.props.show ? " open" : ""}`;
+
     return (
-      <div className="nav flex-column links">
-        {menu}
-        <a
-          className="nav-link-custom"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://instagram.com/tolik_petchenko"
-        >
-          <i className="fab fa-instagram"></i>
-        </a>
+      <div className={toggleClasses}>
+        <div className="nav flex-column links">
+          {menu}
+          <a
+            className="nav-link-custom"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://instagram.com/tolik_petchenko"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
     );
   }

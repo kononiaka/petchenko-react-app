@@ -8,13 +8,6 @@ class Header extends Component {
       <React.Fragment>
         <div className="header">
           <div className="inner">
-            <div onClick={this.props.toggleMenu} className="sidebar-toggle">
-              <div className="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
             <Link className="header-text" to="/">
               TOLIK &nbsp; PETCHENKO
             </Link>
