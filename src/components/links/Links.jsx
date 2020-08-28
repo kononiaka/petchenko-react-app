@@ -5,7 +5,6 @@ import "./Links.css";
 class Links extends Component {
   state = {
     menuItems: [
-      { name: "", isActive: false, route: "/main" },
       { name: "Gallery", isActive: false, route: "/gallery" },
       { name: "Contact", isActive: false, route: "/contact" },
     ],
@@ -42,19 +41,28 @@ class Links extends Component {
     const toggleClasses = `slider${this.props.show ? " open" : ""}`;
 
     return (
-      <div className={toggleClasses}>
-        <div className="nav flex-column links">
-          {menu}
-          <a
-            className="nav-link-custom"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://instagram.com/tolik_petchenko"
-          >
-            <i className="fab fa-instagram"></i>
-          </a>
+      <>
+        <div className={toggleClasses}>
+          <div onClick={this.props.click} className="sidebar-toggle">
+            <div className="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div className="nav flex-column">
+            {menu}
+            <a
+              className="nav-link-custom"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://instagram.com/tolik_petchenko"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
