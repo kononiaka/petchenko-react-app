@@ -1,6 +1,5 @@
 .main {
   z-index: 888;
-  font-family: "Sacramento", serif;
   background-image: url(../../img/JB1A6883.jpg);
   background-repeat: no-repeat;
   height: 100vh;
@@ -32,4 +31,42 @@
   bottom: 0;
   margin-bottom: 3%;
   margin-right: 3%;
+}
+
+@media (max-width: 450px) {
+  .main {
+    z-index: 888;
+    background-image: url(../../img/IMG_6466.jpg);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-text-text {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.6em;
+    font-size: 22px;
+    margin: 75px 0;
+    text-shadow: black 3px 3px;
+  }
+  .home.fab.fa-instagram {
+    z-index: 999;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #fff;
+    font-size: 56px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 4px;
+    padding-top: 7px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 7%;
+    margin-right: 7%;
+  }
 }

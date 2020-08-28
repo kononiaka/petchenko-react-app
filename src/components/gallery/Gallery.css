@@ -20,10 +20,11 @@
     grid-gap: 50px;
   }
   .galleryItem {
-    margin-left: 15px;
     width: 350%;
   }
-  .galleryItem:nth-last-child(-n + 5) {
-    margin-top: -35px;
+
+  .galleryItem img {
+    width: 150%;
+    margin-left: -75px;
   }
 }

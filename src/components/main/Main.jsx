@@ -18,7 +18,7 @@ class Works extends Component {
       { id: 9, src: require("../../img/DSC_6062-2.jpg") },
       { id: 10, src: require("../../img/DSC_6097-2.jpg") },
     ],
-    menuOpen: true,
+    menuOpen: false,
   };
 
   toggleMenu = () => {
@@ -31,7 +31,7 @@ class Works extends Component {
   render() {
     return (
       <>
-        <div className="container-custom">
+        <div style={{ height: "100%" }} className="container-custom">
           <Header></Header>
           <div className="row">
             <Links click={this.toggleMenu} show={this.state.menuOpen} />
