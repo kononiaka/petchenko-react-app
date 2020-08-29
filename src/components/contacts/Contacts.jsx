@@ -42,6 +42,9 @@ class Contacts extends Component {
                   anatoliypetchenko@gmail.com
                 </a>
               </h6>
+              <h6 className="general-inquriries-cell">
+                <a href="tel:+380955365335">+380 95 536 53 35</a>
+              </h6>
               {messageOpen}
               {backdrop}
               <button onClick={this.handleMessage} className="message-send">
