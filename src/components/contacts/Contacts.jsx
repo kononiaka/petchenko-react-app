@@ -8,6 +8,7 @@ import Backdrop from "../Backdrop/Backdrop";
 class Contacts extends Component {
   state = {
     messageOpen: false,
+    menuOpen: false,
   };
 
   handleMessage = () => {
@@ -18,6 +19,13 @@ class Contacts extends Component {
 
   handleBackdrop = () => {
     this.setState({ messageOpen: false });
+  };
+
+  toggleMenu = () => {
+    this.setState((prevState) => {
+      console.log("click");
+      return { menuOpen: !prevState.menuOpen };
+    });
   };
 
   render() {
@@ -32,24 +40,26 @@ class Contacts extends Component {
     return (
       <>
         <div className="container-custom">
-          <Header></Header>
-          <div className="row">
-            <Links></Links>
-            <div className="col text-container">
-              <h6 className="general-inquriries">GENERAL INQUIRIES</h6>
-              <h6 className="general-inquriries-mail">
-                <a href="mailto:anatoliypetchenko@gmail.com">
-                  anatoliypetchenko@gmail.com
-                </a>
-              </h6>
-              <h6 className="general-inquriries-cell">
-                <a href="tel:+380955365335">+380 95 536 53 35</a>
-              </h6>
-              {messageOpen}
-              {backdrop}
-              <button onClick={this.handleMessage} className="message-send">
-                Send a message
-              </button>
+          <div className="container-overflow">
+            <Header></Header>
+            <div className="row">
+              <Links click={this.toggleMenu} show={this.state.menuOpen} />
+              <div className="col text-container">
+                <h6 className="general-inquriries">GENERAL INQUIRIES</h6>
+                <h6 className="general-inquriries-mail">
+                  <a href="mailto:anatoliypetchenko@gmail.com">
+                    anatoliypetchenko@gmail.com
+                  </a>
+                </h6>
+                <h6 className="general-inquriries-cell">
+                  <a href="tel:+380955365335">+380 95 536 53 35</a>
+                </h6>
+                {messageOpen}
+                {backdrop}
+                <button onClick={this.handleMessage} className="message-send">
+                  Send a message
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactMessage.css";
 
-const ContactMessage = props => {
+const ContactMessage = (props) => {
   return (
     <div className="messageContainer">
       <div className="contact-container">
@@ -10,7 +10,8 @@ const ContactMessage = props => {
           <i
             onClick={props.click}
             className="fa fa-times"
-            aria-hidden="true"></i>
+            aria-hidden="true"
+          ></i>
         </div>
         <div className="form-group">
           <label htmlFor="Name">Name</label>

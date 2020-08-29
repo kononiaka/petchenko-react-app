@@ -1,6 +1,18 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 .container-custom {
   margin: 0 auto;
   width: 92.5%;
+}
+.container-overflow {
+  overflow: hidden;
 }
 
 @media (max-width: 450px) {
@@ -8,9 +20,5 @@
     margin: 0 auto;
     width: 80%;
     font-weight: bold;
-  }
-  .content {
-    font-family: "Sacramento";
-    font-weight: normal;
   }
 }

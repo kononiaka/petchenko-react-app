@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 50px;
+  position: relative;
+  width: 90%;
+  margin-left: 50px;
 }
 
 .galleryItem {
@@ -25,6 +28,6 @@
 
   .galleryItem img {
     width: 150%;
-    margin-left: -75px;
+    margin-left: -125px;
   }
 }

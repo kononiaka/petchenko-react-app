@@ -1,10 +1,10 @@
 .messageContainer {
   font-family: "Sacramento";
-  left: 750px;
+  left: 450px;
   top: 250px;
   position: fixed;
-  width: 30%;
-  height: 55%;
+  width: 50%;
+  height: 70%;
   z-index: 200;
   background-color: #fff;
 }
@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .contact-text {
   margin-top: 50px;
   font-size: 22px;
@@ -51,7 +52,7 @@ label {
 
 .form-group-text {
   display: inline-block;
-  width: 48%;
+  width: 47.5%;
 }
 .form-group-text:last-child {
   margin-left: 25px;
@@ -73,12 +74,38 @@ input[type="submit"] {
   border: 3px solid transparent;
 }
 
-/* input[type="submit"]:hover {
-  height: 50px;
-  width: 150px;
-  background-color: #fff;
-  border: none;
-  color: #000;
-  text-decoration: none;
-  border: 3px solid black;
-} */
+@media (max-width: 450px) {
+  .messageContainer {
+    left: 0px;
+    top: 0;
+    width: 100%;
+  }
+  .contact-text {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0em;
+    display: inline-block;
+  }
+  .fa-times {
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 10px;
+    font-size: 36px;
+  }
+  label {
+    font-size: 12px;
+  }
+  .form-group-text {
+    display: block;
+    width: 90%;
+  }
+  .form-group-text:last-child {
+    display: block;
+    width: 90%;
+    margin-left: 0px;
+  }
+  textarea {
+    width: 250px;
+  }
+}

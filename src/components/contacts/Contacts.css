@@ -1,8 +1,11 @@
 .text-container {
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  margin-top: 200px;
+  margin-left: 50px;
 }
 .general-inquriries {
   font-size: 20px;
@@ -56,5 +59,8 @@
     margin-top: 45px;
     font-size: 12px;
     padding: 10px 25px;
+  }
+  .text-container {
+    margin-left: -25px;
   }
 }
