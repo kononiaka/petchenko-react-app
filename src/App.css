@@ -11,14 +11,14 @@ body {
   margin: 0 auto;
   width: 92.5%;
 }
-.container-overflow {
-  overflow: hidden;
-}
 
 @media (max-width: 450px) {
   .container-custom {
     margin: 0 auto;
     width: 80%;
     font-weight: bold;
+  }
+  .container-overflow {
+    overflow: hidden;
   }
 }

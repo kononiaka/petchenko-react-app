@@ -6,12 +6,10 @@
   width: 90%;
   margin-left: 50px;
 }
-
 .galleryItem {
   margin-left: -23px;
   cursor: pointer;
 }
-
 .galleryItem img {
   width: 95%;
 }

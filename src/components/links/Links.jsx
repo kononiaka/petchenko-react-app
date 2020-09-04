@@ -43,13 +43,6 @@ class Links extends Component {
     return (
       <>
         <div className={toggleClasses}>
-          <div onClick={this.props.click} className="sidebar-toggle">
-            <div className="hamburger">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
           <div className="nav flex-column">
             {menu}
             <a

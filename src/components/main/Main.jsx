@@ -3,6 +3,7 @@ import "./Main.css";
 import Gallery from "../gallery/Gallery";
 import Links from "../links/Links";
 import Header from "../header/Header";
+import ToggleButton from "../ToggleButton/ToggleButton";
 
 class Works extends Component {
   state = {
@@ -16,14 +17,12 @@ class Works extends Component {
       { id: 7, src: require("../../img/DSC_5983.jpg") },
       { id: 8, src: require("../../img/DSC_6027-2.jpg") },
       { id: 9, src: require("../../img/DSC_6062-2.jpg") },
-      { id: 10, src: require("../../img/DSC_6097-2.jpg") },
     ],
     menuOpen: false,
   };
 
   toggleMenu = () => {
     this.setState((prevState) => {
-      console.log("click");
       return { menuOpen: !prevState.menuOpen };
     });
   };
@@ -33,8 +32,12 @@ class Works extends Component {
       <>
         <div style={{ height: "100%" }} className="container-custom">
           <Header></Header>
+          <ToggleButton
+            click={this.toggleMenu}
+            show={this.state.menuOpen}
+          ></ToggleButton>
           <div className="row">
-            <Links click={this.toggleMenu} show={this.state.menuOpen} />
+            <Links show={this.state.menuOpen} />
             <div className="col">
               <Gallery elements={this.state.images} />
             </div>

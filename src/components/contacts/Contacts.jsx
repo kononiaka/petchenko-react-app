@@ -4,6 +4,7 @@ import Header from "./../header/Header";
 import Links from "./../links/Links";
 import ContactMessage from "../ContactMessage/ContactMessage";
 import Backdrop from "../Backdrop/Backdrop";
+import ToggleButton from "../ToggleButton/ToggleButton";
 
 class Contacts extends Component {
   state = {
@@ -23,7 +24,6 @@ class Contacts extends Component {
 
   toggleMenu = () => {
     this.setState((prevState) => {
-      console.log("click");
       return { menuOpen: !prevState.menuOpen };
     });
   };
@@ -41,9 +41,13 @@ class Contacts extends Component {
       <>
         <div className="container-custom">
           <div className="container-overflow">
+            <ToggleButton
+              click={this.toggleMenu}
+              show={this.state.menuOpen}
+            ></ToggleButton>
             <Header></Header>
             <div className="row">
-              <Links click={this.toggleMenu} show={this.state.menuOpen} />
+              <Links show={this.state.menuOpen} />
               <div className="col text-container">
                 <h6 className="general-inquriries">GENERAL INQUIRIES</h6>
                 <h6 className="general-inquriries-mail">

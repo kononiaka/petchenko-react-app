@@ -26,56 +26,6 @@ h6 {
   transform: translateX(0);
 }
 
-.sidebar-toggle {
-  position: fixed;
-  top: -100px;
-  left: 200px;
-  padding: 24px 13px;
-  width: 45px;
-  cursor: pointer;
-  transform: translate3d(-100%, 0, 0);
-}
-
-.sidebar-toggle .hamburger > div {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin-bottom: 3px;
-  overflow: hidden;
-  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1),
-    opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.sidebar-toggle:hover .hamburger {
-  transform: rotate(90deg);
-}
-
-.sidebar-toggle .hamburger {
-  transition: 0.4s transform cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.sidebar-toggle .hamburger > div:first-child::before {
-  transition-duration: 0.8s;
-  transition-delay: 0s;
-}
-
-.sidebar-toggle .hamburger > div::after,
-.sidebar-toggle .hamburger > div::before {
-  background: #000000;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
-
 .works-text {
   text-align: center;
   padding-top: 100px;
