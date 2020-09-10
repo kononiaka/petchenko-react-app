@@ -3,14 +3,27 @@ import "./Gallery.css";
 import Masonry from "react-masonry-component";
 
 const Gallery = (props) => {
+  const masonryOptions = {
+    transitionDuration: 0,
+    columnWidth: 475,
+  };
+
   const galleryItems = props.elements.map((element) => (
-    <Masonry>
-      <div className="galleryItem" key={element.id}>
-        <img src={element.src} alt="" />
-      </div>
-    </Masonry>
+    <li key={element.id} className="galleryItem">
+      <img src={element.src} alt="" />
+    </li>
   ));
-  return <div className="gallery">{galleryItems}</div>;
+  return (
+    <Masonry
+      elementType={"ul"}
+      options={masonryOptions}
+      disableImagesLoaded={false}
+      updateOnEachImageLoad={false}
+      enableResizableChildren
+    >
+      {galleryItems}
+    </Masonry>
+  );
 };
 
 export default Gallery;

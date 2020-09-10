@@ -8,15 +8,18 @@ import ToggleButton from "../ToggleButton/ToggleButton";
 class Works extends Component {
   state = {
     images: [
-      { id: 1, src: require("../../img/DSC_5678.jpg") },
-      { id: 2, src: require("../../img/DSC_5718.jpg") },
-      { id: 3, src: require("../../img/DSC_5751.jpg") },
-      { id: 4, src: require("../../img/DSC_5887.jpg") },
-      { id: 5, src: require("../../img/DSC_5899.jpg") },
-      { id: 6, src: require("../../img/DSC_5920.jpg") },
-      { id: 7, src: require("../../img/DSC_5983.jpg") },
-      { id: 8, src: require("../../img/DSC_6027-2.jpg") },
-      { id: 9, src: require("../../img/DSC_6062-2.jpg") },
+      { id: 1, src: require("../../img/JB1A7112.jpg") },
+      { id: 2, src: require("../../img/DSC_5887.jpg") },
+      { id: 4, src: require("../../img/HM7B1003.jpg") },
+      { id: 3, src: require("../../img/DSC_6399.jpg") },
+      { id: 5, src: require("../../img/HM7B1036.jpg") },
+      { id: 6, src: require("../../img/HM7B2818.jpg") },
+      { id: 7, src: require("../../img/HM7B3988.jpg") },
+      { id: 8, src: require("../../img/HM7B5559.jpg") },
+      { id: 9, src: require("../../img/JB1A5035с.jpg") },
+      { id: 10, src: require("../../img/JB1A6147.jpg") },
+      { id: 12, src: require("../../img/JB1A6984.jpg") },
+      { id: 11, src: require("../../img/JB1A6883.jpg") },
     ],
     menuOpen: false,
   };
@@ -38,9 +41,7 @@ class Works extends Component {
           ></ToggleButton>
           <div className="row">
             <Links show={this.state.menuOpen} />
-            <div className="col">
-              <Gallery elements={this.state.images} />
-            </div>
+            <Gallery elements={this.state.images} />
           </div>
         </div>
       </>

@@ -2,16 +2,20 @@
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 50px;
-  position: relative;
-  width: 90%;
-  margin-left: 50px;
 }
 .galleryItem {
-  margin-left: -23px;
   cursor: pointer;
+  margin-bottom: 25px;
 }
-.galleryItem img {
-  width: 95%;
+ul {
+  width: 3300px;
+  margin-left: 250px;
+}
+li {
+  list-style-type: none;
+}
+img {
+  width: 450px;
 }
 
 @media (max-width: 450px) {
@@ -21,11 +25,11 @@
     grid-gap: 50px;
   }
   .galleryItem {
-    width: 350%;
+    width: 115%;
   }
 
   .galleryItem img {
     width: 150%;
-    margin-left: -125px;
+    margin-left: -100px;
   }
 }
