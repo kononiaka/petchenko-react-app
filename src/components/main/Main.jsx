@@ -19,7 +19,7 @@ class Works extends Component {
       { id: 9, src: require("../../img/JB1A5035с.jpg") },
       { id: 10, src: require("../../img/JB1A6147.jpg") },
       { id: 12, src: require("../../img/JB1A6984.jpg") },
-      { id: 11, src: require("../../img/JB1A6883.jpg") },
+      { id: 11, src: require("../../img/JB1A6883_1.jpg") },
     ],
     menuOpen: false,
   };
