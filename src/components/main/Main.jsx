@@ -21,13 +21,19 @@ class Works extends Component {
       { id: 12, src: require("../../img/JB1A6984.jpg") },
       { id: 11, src: require("../../img/JB1A6883_1.jpg") },
     ],
+    openImageId: null,
     menuOpen: false,
+    imageOpen: false,
   };
 
   toggleMenu = () => {
     this.setState((prevState) => {
       return { menuOpen: !prevState.menuOpen };
     });
+  };
+
+  openImage = (id) => {
+    this.setState((state) => ({ openImageId: id }));
   };
 
   render() {
@@ -41,7 +47,12 @@ class Works extends Component {
           ></ToggleButton>
           <div className="row">
             <Links show={this.state.menuOpen} />
-            <Gallery elements={this.state.images} />
+            <Gallery
+              elements={this.state.images}
+              imageClick={this.openImage}
+              show={this.state.imageOpen}
+              openImageId={this.state.openImageId}
+            />
           </div>
         </div>
       </>

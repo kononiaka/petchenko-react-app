@@ -1,6 +1,7 @@
 import React from "react";
 import "./Gallery.css";
 import Masonry from "react-masonry-component";
+import { Link } from "react-router-dom";
 
 const Gallery = (props) => {
   const masonryOptions = {
@@ -8,11 +9,25 @@ const Gallery = (props) => {
     columnWidth: 475,
   };
 
+  const toggleImageClasses = `galleryItem${props.show ? " open" : ""}`;
+
+  // const borderImageStyles = {
+  //   border: "1px solid red",
+  //   transform: "scale(1.5)",
+  // };
+
   const galleryItems = props.elements.map((element) => (
-    <li key={element.id} className="galleryItem">
+    <Link
+      key={element.id}
+      className={toggleImageClasses}
+      onClick={() => props.imageClick(element.id)}
+      // style={element.id === props.openImageId ? borderImageStyles : {}}
+      to="images/id"
+    >
       <img src={element.src} alt="" />
-    </li>
+    </Link>
   ));
+
   return (
     <Masonry
       elementType={"ul"}

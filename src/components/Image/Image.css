@@ -1,0 +1,10 @@
+.imageContainer {
+  font-family: "Sacramento";
+  left: 450px;
+  top: 250px;
+  position: fixed;
+  width: 50%;
+  height: 70%;
+  z-index: 200;
+  background-color: #fff;
+}

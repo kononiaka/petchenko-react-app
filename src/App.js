@@ -8,6 +8,7 @@ import Main from "./components/main/Main";
 import About from "./components/about/About";
 import Exhibition from "./components/exhibition/Exhibition";
 import Store from "./components/store/Store.jsx";
+import Image from "./components/Image/Image.jsx";
 import Contacts from "./components/contacts/Contacts";
 import NotFound from "./components/notFound/notFound";
 
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/contact" component={Contacts}></Route>
           <Route path="/store" component={Store}></Route>
           <Route path="/exhibition" component={Exhibition}></Route>
+          <Route path="/images/id" component={Image}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/not-found" component={NotFound}></Route>
           <Route path="/" exact component={Home}></Route>
