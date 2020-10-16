@@ -18,3 +18,17 @@
   font-size: 24px;
   left: 650px;
 }
+
+@media (max-width: 450px) {
+  .imageContainer {
+    width: 90%;
+    height: 100vh;
+  }
+  .imageContainer img {
+    top: 100px;
+    width: 85%;
+  }
+  .imageContainer i {
+    left: 150px;
+  }
+}
