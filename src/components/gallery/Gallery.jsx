@@ -11,18 +11,14 @@ const Gallery = (props) => {
 
   const toggleImageClasses = `galleryItem${props.show ? " open" : ""}`;
 
-  // const borderImageStyles = {
-  //   border: "1px solid red",
-  //   transform: "scale(1.5)",
-  // };
-
   const galleryItems = props.elements.map((element) => (
     <Link
       key={element.id}
       className={toggleImageClasses}
-      onClick={() => props.imageClick(element.id)}
-      // style={element.id === props.openImageId ? borderImageStyles : {}}
-      to="images/id"
+      onClick={() => {
+        props.imageClick(element.id, element.src);
+      }}
+      to={`images/${element.id}`}
     >
       <img src={element.src} alt="" />
     </Link>
