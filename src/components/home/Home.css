@@ -38,12 +38,7 @@
     z-index: 888;
     background-image: url(../../img/IMG_6466.jpg);
     background-position-x: 50%;
-    background-repeat: no-repeat;
-    height: 100vh;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
+    background-position-y: 50%;
   }
   .main-text-text {
     color: #fff;
