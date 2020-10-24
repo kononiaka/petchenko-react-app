@@ -4,6 +4,7 @@ import Gallery from "../gallery/Gallery";
 import Links from "../links/Links";
 import Header from "../header/Header";
 import ToggleButton from "../ToggleButton/ToggleButton";
+import Footer from "../Footer/Footer";
 
 const Main = (props) => {
   return (
@@ -23,6 +24,7 @@ const Main = (props) => {
             openImageId={props.openImageId}
           />
         </div>
+        <Footer></Footer>
       </div>
     </>
   );

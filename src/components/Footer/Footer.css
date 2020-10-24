@@ -1,0 +1,29 @@
+.footer-href {
+  color: #000;
+}
+
+.footer-href:hover {
+  color: #000;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+.footer span {
+  font-size: 12px;
+  margin: 0 50px;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    text-align: left;
+  }
+  .footer span {
+    margin: 0 20px 0 80px;
+  }
+}
