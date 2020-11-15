@@ -1,9 +1,11 @@
 import React from "react";
 import "./Image.css";
 import { useHistory } from "react-router";
+import Footer from "../Footer/Footer";
 
 const Image = (props) => {
   const history = useHistory();
+  console.log("Image");
   return (
     <>
       <div className="imageContainer">
@@ -14,6 +16,7 @@ const Image = (props) => {
         ></i>
         <img src={props.src} alt="" />
       </div>
+      <Footer></Footer>
     </>
   );
 };

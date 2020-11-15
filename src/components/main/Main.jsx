@@ -2,15 +2,21 @@ import React from "react";
 import "./Main.css";
 import Gallery from "../gallery/Gallery";
 import Links from "../links/Links";
-import Header from "../header/Header";
 import ToggleButton from "../ToggleButton/ToggleButton";
 import Footer from "../Footer/Footer";
+import BigFoto from "../BigFoto/BigFoto";
+import Background from "../../img/JB1A6883.jpg";
 
 const Main = (props) => {
   return (
     <>
-      <div style={{ height: "100%" }} className="container-custom">
-        <Header></Header>
+      <BigFoto bcg={Background}></BigFoto>
+      <div
+        style={{
+          height: "100%",
+        }}
+        className="container-custom"
+      >
         <ToggleButton
           click={props.toggleMenu}
           show={props.menuOpen}
@@ -24,8 +30,8 @@ const Main = (props) => {
             openImageId={props.openImageId}
           />
         </div>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
     </>
   );
 };

@@ -1,0 +1,14 @@
+.collection-header {
+  margin: 50px 0;
+  position: relative;
+}
+
+.collection-header::after {
+  display: block;
+  content: "";
+  background-color: #bdebe1;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 140%;
+}

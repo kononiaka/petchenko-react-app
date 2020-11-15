@@ -13,6 +13,7 @@ const ContactMessage = (props) => {
             aria-hidden="true"
           ></i>
         </div>
+        <form className="feedback-form" method="post"></form>
         <div className="form-group">
           <label htmlFor="Name">Name</label>
           <div className="form-group-text">

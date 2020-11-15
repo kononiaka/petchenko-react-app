@@ -8,10 +8,13 @@ h6 {
 
 .nav-link-custom {
   color: black;
-  margin: 10px 0 0px 0px;
+  margin: 20px 0px 0px 30px;
   font-weight: bold;
   font-size: 17px;
   letter-spacing: 0.2em;
+}
+.nav-link-custom:first-child {
+  margin-top: -25px;
 }
 .nav-link-custom:last-child {
   margin-top: 50px;
@@ -24,7 +27,10 @@ h6 {
 .slider.open {
   display: flex;
   width: 15%;
+  left: 20px;
   transform: translateX(0);
+  position: absolute;
+  background-color: #fff;
 }
 
 .works-text {

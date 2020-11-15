@@ -7,15 +7,18 @@
   cursor: pointer;
   margin-bottom: 25px;
 }
+.galleryItem:nth-child(-n + 3) {
+  margin-top: -100px;
+}
 ul {
-  width: 3300px;
-  margin-left: 175px;
+  width: 1550px;
+  left: 200px;
 }
 li {
   list-style-type: none;
 }
 img {
-  width: 450px;
+  width: 460px;
 }
 
 @media (max-width: 450px) {

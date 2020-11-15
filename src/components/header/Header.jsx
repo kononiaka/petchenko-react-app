@@ -9,7 +9,7 @@ class Header extends Component {
         <div className="header">
           <div className="inner">
             <Link className="header-text" to="/">
-              TOLIK &nbsp; PETCHENKO
+              PETCHENKO&nbsp; ANATOLIY
             </Link>
           </div>
         </div>

@@ -6,15 +6,13 @@ import { Link } from "react-router-dom";
 const Gallery = (props) => {
   const masonryOptions = {
     transitionDuration: 0,
-    columnWidth: 475,
+    columnWidth: 480,
   };
-
-  const toggleImageClasses = `galleryItem${props.show ? " open" : ""}`;
 
   const galleryItems = props.elements.map((element) => (
     <Link
       key={element.id}
-      className={toggleImageClasses}
+      className="galleryItem"
       onClick={() => {
         props.imageClick(element.id, element.src);
       }}

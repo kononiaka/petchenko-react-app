@@ -1,0 +1,21 @@
+.blockContainer_name {
+  color: rgb(83, 80, 80);
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.block-container {
+  display: inline-block;
+}
+.block-container:hover .block-container_name {
+  text-decoration: none;
+}
+.inline:first-child {
+  margin-left: 0;
+}
+.inline {
+  display: inline-block;
+  margin-left: 73px;
+  color: grey;
+  margin-top: 10px;
+}

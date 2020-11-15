@@ -16,9 +16,11 @@
 }
 .footer span {
   font-size: 12px;
-  margin: 0 50px;
+  margin: 0 10px;
 }
-
+.footer img {
+  width: 3%;
+}
 @media (max-width: 450px) {
   .footer {
     text-align: left;
