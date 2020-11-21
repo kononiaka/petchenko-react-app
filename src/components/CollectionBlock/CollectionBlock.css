@@ -7,6 +7,11 @@
 .block-container {
   display: inline-block;
 }
+
+.block-container.hide {
+  visibility: hidden;
+}
+
 .block-container:hover .block-container_name {
   text-decoration: none;
 }
@@ -18,4 +23,30 @@
   margin-left: 73px;
   color: grey;
   margin-top: 10px;
+}
+
+@media (max-width: 450px) {
+  .block-container {
+    margin-top: -50px;
+  }
+  .block-container img {
+    display: inline-block;
+    width: 80%;
+  }
+  .blockContainer_name {
+    color: rgb(83, 80, 80);
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+  }
+  .block-details {
+    display: block;
+  }
+  .inline {
+    margin-left: 23px;
+    color: grey;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-top: -5px;
+  }
 }

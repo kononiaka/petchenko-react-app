@@ -5,16 +5,28 @@
   align-items: center;
   flex-direction: column;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 50px;
 }
 
 .main-text-text {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.4em;
   font-size: 16px;
-  margin: 60px 0;
+  margin-top: -100px;
+  cursor: pointer;
+  z-index: 999;
+}
+.main-text-text:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-text-name {
+  color: white;
+  margin-bottom: 300px;
+  font-size: 72px;
 }
 
 .countur {
@@ -39,7 +51,7 @@
   width: 50%;
   height: 5px;
   right: -1px;
-  background-color: #fff;
+  background-color: white;
 }
 
 .arrow::after {
@@ -58,11 +70,11 @@
 @media (max-width: 450px) {
   .photo {
     z-index: 888;
-    background-image: url(../../img/IMG_6466.jpg);
+    width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
   }
-  .main-text-text {
+  .main-text-text a {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -70,5 +82,12 @@
     font-size: 22px;
     margin: 75px 0;
     text-shadow: black 3px 3px;
+  }
+  .countur {
+    border: solid 2px #fff;
+    width: 96%;
+    height: 98%;
+    margin: 10px auto;
+    position: absolute;
   }
 }

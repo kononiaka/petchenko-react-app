@@ -5,7 +5,6 @@ import Footer from "../Footer/Footer";
 
 const Image = (props) => {
   const history = useHistory();
-  console.log("Image");
   return (
     <>
       <div className="imageContainer">

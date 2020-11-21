@@ -40,6 +40,10 @@ class App extends Component {
               src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6146.jpg"),
             },
             {
+              id: "viktoria_g_06",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6286.jpg"),
+            },
+            {
               id: "viktoria_g_02",
               src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6160-3.jpg"),
             },
@@ -55,13 +59,44 @@ class App extends Component {
               id: "viktoria_g_05",
               src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6206.jpg"),
             },
-            {
-              id: "viktoria_g_06",
-              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6286.jpg"),
-            },
+
             {
               id: "viktoria_g_07",
               src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6302.jpg"),
+            },
+            {
+              id: "viktoria_g_08",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6307.jpg"),
+            },
+            {
+              id: "viktoria_g_09",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6318.jpg"),
+            },
+            {
+              id: "viktoria_g_10",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6328.jpg"),
+            },
+
+            {
+              id: "viktoria_g_12",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6421.jpg"),
+            },
+
+            {
+              id: "viktoria_g_14",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6446.jpg"),
+            },
+            {
+              id: "viktoria_g_",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6399.jpg"),
+            },
+            {
+              id: "viktoria_g_15",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6506.jpg"),
+            },
+            {
+              id: "viktoria_g_13",
+              src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6426.jpg"),
             },
           ],
           status: "Published",
@@ -80,7 +115,6 @@ class App extends Component {
   };
 
   openImage = (id, src = this.state.srcOpen) => {
-    console.log("click");
     this.setState((state) => ({
       openImageId: id,
       srcOpen: src,
@@ -103,7 +137,12 @@ class App extends Component {
             render={() => (
               <BlockImage
                 imageClick={this.openImage}
+                menuOpen={this.state.menuOpen}
+                toggleMenu={this.toggleMenu}
                 photos={this.state.collection.beauty_fashion[0].photos}
+                name={this.state.collection.beauty_fashion.map(
+                  (element) => element.name
+                )}
                 poster={this.state.collection.beauty_fashion.map(
                   (photo) => photo.poster
                 )}
@@ -116,6 +155,8 @@ class App extends Component {
               <Collection
                 blocks={this.state.collection.beauty_fashion}
                 blockClick={this.blockClick}
+                menuOpen={this.state.menuOpen}
+                toggleMenu={this.toggleMenu}
               />
             )}
           ></Route>

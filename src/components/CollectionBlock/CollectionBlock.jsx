@@ -2,8 +2,14 @@ import React from "react";
 import "./CollectionBlock.css";
 
 const Block = (props) => {
+  const screenWidth = window.screen.width;
+
+  const styles =
+    screenWidth < 451 && props.menuOpen
+      ? "block-container hide"
+      : "block-container";
   return (
-    <div className="block-container">
+    <div className={styles}>
       <img src={props.src} alt="" />
       <h5 className="blockContainer_name">{props.name}</h5>
       <div className="block-details">

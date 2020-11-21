@@ -41,10 +41,12 @@ class Contacts extends Component {
       <>
         <div className="container-custom">
           <div className="container-overflow">
-            <ToggleButton
-              click={this.toggleMenu}
-              show={this.state.menuOpen}
-            ></ToggleButton>
+            <div className="contacts-button">
+              <ToggleButton
+                click={this.toggleMenu}
+                show={this.state.menuOpen}
+              ></ToggleButton>
+            </div>
             <Header></Header>
             <div className="row">
               <Links show={this.state.menuOpen} />

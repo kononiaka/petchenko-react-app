@@ -8,6 +8,11 @@ import BigFoto from "../BigFoto/BigFoto";
 import Background from "../../img/JB1A6883.jpg";
 
 const Main = (props) => {
+  const screenWidth = window.screen.width;
+
+  const hideElements =
+    screenWidth < 451 && props.menuOpen ? "hide-images on" : "hide-images";
+
   return (
     <>
       <BigFoto bcg={Background}></BigFoto>
@@ -23,12 +28,14 @@ const Main = (props) => {
         ></ToggleButton>
         <div className="row">
           <Links show={props.menuOpen} />
-          <Gallery
-            elements={props.images}
-            imageClick={props.openImage}
-            show={props.imageOpen}
-            openImageId={props.openImageId}
-          />
+          <div className={hideElements}>
+            <Gallery
+              elements={props.images}
+              imageClick={props.openImage}
+              show={props.imageOpen}
+              openImageId={props.openImageId}
+            />
+          </div>
         </div>
       </div>
       <Footer></Footer>

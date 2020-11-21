@@ -9,6 +9,8 @@ const Gallery = (props) => {
     columnWidth: 480,
   };
 
+  const screenWidth = window.screen.width;
+
   const galleryItems = props.elements.map((element) => (
     <Link
       key={element.id}
@@ -21,18 +23,22 @@ const Gallery = (props) => {
       <img src={element.src} alt="" />
     </Link>
   ));
+  const masonryElements =
+    screenWidth > 451 ? (
+      <Masonry
+        elementType={"ul"}
+        options={masonryOptions}
+        disableImagesLoaded={false}
+        updateOnEachImageLoad={false}
+        enableResizableChildren
+      >
+        {galleryItems}
+      </Masonry>
+    ) : (
+      galleryItems
+    );
 
-  return (
-    <Masonry
-      elementType={"ul"}
-      options={masonryOptions}
-      disableImagesLoaded={false}
-      updateOnEachImageLoad={false}
-      enableResizableChildren
-    >
-      {galleryItems}
-    </Masonry>
-  );
+  return <>{masonryElements}</>;
 };
 
 export default Gallery;

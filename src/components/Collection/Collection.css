@@ -1,14 +1,47 @@
 .collection-header {
-  margin: 50px 0;
   position: relative;
+  left: 200px;
+  top: -120px;
 }
 
 .collection-header::after {
   display: block;
   content: "";
   background-color: #bdebe1;
-  width: 100%;
+  width: 85%;
   height: 2px;
   position: absolute;
   top: 140%;
+}
+
+.collection-button {
+  display: inline-block;
+  position: absolute;
+  top: 100px;
+}
+.collection-links {
+  margin-top: 150px;
+  display: inline-block;
+  top: 150px;
+}
+.collection-stop {
+  width: 200px;
+  height: 600px;
+  display: inline-block;
+}
+
+@media (max-width: 450px) {
+  .collection-header {
+    left: 0px;
+    top: -170px;
+  }
+  .collection-button {
+    top: 125px;
+  }
+  .collection-links {
+    margin-top: 200px;
+  }
+  .collection-stop {
+    display: none;
+  }
 }

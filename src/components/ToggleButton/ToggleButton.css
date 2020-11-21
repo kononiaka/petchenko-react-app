@@ -61,16 +61,18 @@
 }
 @media (max-width: 450px) {
   .sidebar-toggle {
-    padding: 50px 10px;
-  }
-  .sidebar-toggle.open {
-    position: fixed;
-    top: 25px;
-    left: 75px;
-    padding: 24px 13px;
-    width: 45px;
+    position: relative;
+    padding: 30px 10px;
     cursor: pointer;
     transform: translate3d(-100%, 0, 0);
+    top: -45px;
+    left: 40px;
+  }
+  .sidebar-toggle.open {
+    position: relative;
+    padding: 30px 10px;
+    left: 40px;
+    top: -45px;
     z-index: 999;
   }
   .sidebar-toggle .hamburger > div {

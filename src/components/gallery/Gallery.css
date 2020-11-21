@@ -22,17 +22,16 @@ img {
 }
 
 @media (max-width: 450px) {
-  .gallery {
-    display: grid;
-    grid-template-columns: 33.3%;
-    grid-gap: 50px;
-  }
   .galleryItem {
-    width: 115%;
+    display: inline-block;
   }
-
+  .galleryItem:first-child {
+    margin-top: -50px;
+  }
   .galleryItem img {
-    width: 150%;
-    margin-left: -150px;
+    width: 100%;
+  }
+  .galleryItem:nth-child(-n + 2) {
+    margin-bottom: 125px;
   }
 }

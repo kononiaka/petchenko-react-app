@@ -2,6 +2,8 @@ import React from "react";
 import "./BigFoto.css";
 import styled, { keyframes } from "styled-components";
 import { flash } from "react-animations";
+import { Link } from "react-router-dom";
+import smallBackground from "../../img/IMG_6466.jpg";
 
 const Bounce = styled.div`
   position: absolute;
@@ -11,10 +13,35 @@ const Bounce = styled.div`
 `;
 
 const bigFoto = (props) => {
+  const screenWidth = window.screen.width;
+
+  const urlPath = window.location.pathname;
+
+  const background =
+    screenWidth < 451 && urlPath === "/"
+      ? `url(${smallBackground}`
+      : `url(${props.bcg})`;
+
+  const bcgSize =
+    urlPath === "/collection/viktoria_g" && screenWidth > 451
+      ? "50%"
+      : urlPath === "/collection/viktoria_g" && screenWidth < 451
+      ? "100%"
+      : "";
   return (
     <>
-      <div style={{ backgroundImage: `url(${props.bcg}` }} className="photo">
-        <h1 className="main-text-text">Petchenko &nbsp; Anatoliy</h1>
+      <div
+        style={{
+          backgroundImage: background,
+          backgroundSize: bcgSize,
+          backgroundPositionX: bcgSize,
+        }}
+        className="photo"
+      >
+        <Link className="main-text-text" to="/">
+          Petchenko &nbsp; Anatoliy
+        </Link>
+        <h1 className="main-text-name">{props.name}</h1>
         <Bounce>
           <div
             onClick={() => {
