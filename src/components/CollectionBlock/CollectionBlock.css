@@ -1,18 +1,22 @@
-.blockContainer_name {
+.block-container_name {
   color: rgb(83, 80, 80);
   text-transform: uppercase;
   margin: 10px 0;
 }
-
 .block-container {
   display: inline-block;
+  margin-left: 150px;
+}
+
+.block-container img {
+  width: 320px;
 }
 
 .block-container.hide {
   visibility: hidden;
 }
 
-.block-container:hover .block-container_name {
+.block-container a:hover .block-container_name {
   text-decoration: none;
 }
 .inline:first-child {
@@ -20,7 +24,8 @@
 }
 .inline {
   display: inline-block;
-  margin-left: 73px;
+  margin-left: 50px;
+  font-size: 14px;
   color: grey;
   margin-top: 10px;
 }
@@ -31,7 +36,7 @@
   }
   .block-container img {
     display: inline-block;
-    width: 80%;
+    width: 90%;
   }
   .blockContainer_name {
     color: rgb(83, 80, 80);

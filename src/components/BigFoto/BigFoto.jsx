@@ -12,7 +12,7 @@ const Bounce = styled.div`
   animation: 7s ${keyframes`${flash}`} infinite;
 `;
 
-const bigFoto = (props) => {
+const BigFoto = (props) => {
   const screenWidth = window.screen.width;
 
   const urlPath = window.location.pathname;
@@ -23,11 +23,16 @@ const bigFoto = (props) => {
       : `url(${props.bcg})`;
 
   const bcgSize =
-    urlPath === "/collection/viktoria_g" && screenWidth > 451
+    urlPath === "/collection/:id" && screenWidth > 451
       ? "50%"
-      : urlPath === "/collection/viktoria_g" && screenWidth < 451
-      ? "100%"
+      : urlPath === "/collection/:id" && screenWidth < 451
+      ? ""
       : "";
+
+  const mainText =
+    screenWidth < 451 ? "Petchenko Anatoliy" : `Petchenko  Anatoliy`;
+
+  const scrollingAnchor = screenWidth > 451 ? 975 : 800;
   return (
     <>
       <div
@@ -39,13 +44,17 @@ const bigFoto = (props) => {
         className="photo"
       >
         <Link className="main-text-text" to="/">
-          Petchenko &nbsp; Anatoliy
+          {mainText}
         </Link>
         <h1 className="main-text-name">{props.name}</h1>
         <Bounce>
           <div
             onClick={() => {
-              window.scroll({ top: 975, left: 0, behavior: "smooth" });
+              window.scroll({
+                top: scrollingAnchor,
+                left: 0,
+                behavior: "smooth",
+              });
             }}
             className="icon"
           >
@@ -58,4 +67,4 @@ const bigFoto = (props) => {
   );
 };
 
-export default bigFoto;
+export default BigFoto;

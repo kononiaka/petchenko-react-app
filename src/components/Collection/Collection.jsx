@@ -4,12 +4,12 @@ import "./Collection.css";
 import CollectionBlock from "../CollectionBlock/CollectionBlock";
 import Links from "../links/Links";
 import ToggleButton from "../ToggleButton/ToggleButton";
+import ScrollToTop from "../scrollToTop/ScrollToTop";
 
 class Collection extends Component {
   state = {
     menuOpen: false,
   };
-
   toggleMenu = () => {
     this.setState((prevState) => {
       return { menuOpen: !prevState.menuOpen };
@@ -19,10 +19,12 @@ class Collection extends Component {
   render() {
     const collectionBlocks = this.props.blocks.map((block) => (
       <Link
+        className="block-container"
         key={block.id}
         to={`collection/${block.id}`}
         onClick={() => {
-          this.props.blockClick(block.id, block.src);
+          console.log(block.name);
+          this.props.blockClick(block.id);
         }}
       >
         <CollectionBlock
@@ -37,21 +39,24 @@ class Collection extends Component {
     ));
 
     return (
-      <div className="container-custom">
-        <div className="collection-button">
-          <ToggleButton
-            click={this.toggleMenu}
-            show={this.state.menuOpen}
-          ></ToggleButton>
-          <div className="collection-stop"></div>
-          {collectionBlocks}
-        </div>
+      <>
+        <ScrollToTop />
+        <div className="container-custom">
+          <h2 className="collection-header">Collections</h2>
+          <div className="collection-button">
+            <ToggleButton
+              click={this.toggleMenu}
+              show={this.state.menuOpen}
+            ></ToggleButton>
+            <div className="collection-stop"></div>
+          </div>
 
-        <div className="row collection-links">
-          <Links show={this.state.menuOpen} />
+          <div className="row collection-links">
+            <Links show={this.state.menuOpen} />
+          </div>
+          <div className="collection-blocks">{collectionBlocks}</div>
         </div>
-        <h2 className="collection-header">Collections</h2>
-      </div>
+      </>
     );
   }
 }

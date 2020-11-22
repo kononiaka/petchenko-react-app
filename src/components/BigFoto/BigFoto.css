@@ -17,6 +17,7 @@
   margin-top: -100px;
   cursor: pointer;
   z-index: 999;
+  text-shadow: rgb(133, 129, 129) 2px 2px;
 }
 .main-text-text:hover {
   text-decoration: none;
@@ -27,6 +28,7 @@
   color: white;
   margin-bottom: 300px;
   font-size: 72px;
+  text-shadow: rgb(133, 129, 129) 2px 2px;
 }
 
 .countur {
@@ -63,7 +65,7 @@
 .arrow::before {
   top: 15px;
   right: 50px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   transform: rotate(-45deg);
 }
 
@@ -74,14 +76,14 @@
     background-position-x: 50%;
     background-position-y: 50%;
   }
-  .main-text-text a {
+  .main-text-text {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.6em;
     font-size: 22px;
-    margin: 75px 0;
-    text-shadow: black 3px 3px;
+    margin: 0px 0;
+    text-shadow: rgb(133, 129, 129) 2px 2px;
   }
   .countur {
     border: solid 2px #fff;
@@ -89,5 +91,8 @@
     height: 98%;
     margin: 10px auto;
     position: absolute;
+  }
+  .main-text-name {
+    font-size: 60px;
   }
 }

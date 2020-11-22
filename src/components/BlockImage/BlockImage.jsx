@@ -23,6 +23,8 @@ class BlockImage extends Component {
       columnWidth: 480,
     };
 
+    const screenWidth = window.screen.width;
+
     const collectionItems = this.props.photos.map((element) => (
       <Link
         key={element.id}
@@ -35,28 +37,36 @@ class BlockImage extends Component {
         <img src={element.src} alt="" />
       </Link>
     ));
+
+    const masonryElements =
+      screenWidth > 451 ? (
+        <Masonry
+          elementType={"ul"}
+          options={masonryOptions}
+          disableImagesLoaded={false}
+          updateOnEachImageLoad={false}
+          enableResizableChildren
+        >
+          {collectionItems}
+        </Masonry>
+      ) : (
+        collectionItems
+      );
+
     return (
       <>
         <BigFoto bcg={this.props.poster} name={this.props.name} />
-        <ToggleButton
-          click={this.toggleMenu}
-          show={this.state.menuOpen}
-        ></ToggleButton>
-        <div className="row">
-          <Links show={this.state.menuOpen} />
+        <div className="container-custom">
+          <ToggleButton
+            click={this.toggleMenu}
+            show={this.state.menuOpen}
+          ></ToggleButton>
+
+          <div className="row">
+            <Links show={this.state.menuOpen} />
+          </div>
+          <div className="block-masonry">{masonryElements}</div>
         </div>
-        <div className="block-masonry">
-          <Masonry
-            elementType={"ul"}
-            options={masonryOptions}
-            disableImagesLoaded={false}
-            updateOnEachImageLoad={false}
-            enableResizableChildren
-          >
-            {collectionItems}
-          </Masonry>
-        </div>
-        );
       </>
     );
   }

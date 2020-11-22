@@ -1,7 +1,7 @@
 .collection-header {
   position: relative;
-  left: 200px;
-  top: -120px;
+  left: 150px;
+  margin-top: 25px;
 }
 
 .collection-header::after {
@@ -18,11 +18,10 @@
   display: inline-block;
   position: absolute;
   top: 100px;
+  left: 0;
 }
 .collection-links {
   margin-top: 150px;
-  display: inline-block;
-  top: 150px;
 }
 .collection-stop {
   width: 200px;

@@ -33,7 +33,7 @@ class App extends Component {
           src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6318.jpg"),
           poster: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6318.jpg"),
           eventDate: "No Event Date",
-          quantity: 0,
+          status: "Published",
           photos: [
             {
               id: "viktoria_g_01",
@@ -99,7 +99,20 @@ class App extends Component {
               src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6426.jpg"),
             },
           ],
+        },
+        {
+          id: "zelen",
+          name: "Zelen",
+          src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5003.jpg"),
+          poster: require("./img/Collection/Fashion & Beauty/Zelen/JB1A4983.jpg"),
+          eventDate: "No Event Date",
           status: "Published",
+          photos: [
+            {
+              id: "zelen_01",
+              src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5003.jpg"),
+            },
+          ],
         },
       ],
     },
@@ -122,9 +135,9 @@ class App extends Component {
     }));
   };
 
-  blockClick = () => {
-    this.state.collection.beauty_fashion[0].photos.map((photo) =>
-      console.log(photo.src)
+  blockClick = (id) => {
+    this.state.collection.beauty_fashion.map((element) =>
+      console.log(element.name)
     );
   };
 

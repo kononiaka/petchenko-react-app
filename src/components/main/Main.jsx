@@ -3,7 +3,7 @@ import "./Main.css";
 import Gallery from "../gallery/Gallery";
 import Links from "../links/Links";
 import ToggleButton from "../ToggleButton/ToggleButton";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import BigFoto from "../BigFoto/BigFoto";
 import Background from "../../img/JB1A6883.jpg";
 
@@ -38,7 +38,7 @@ const Main = (props) => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 };

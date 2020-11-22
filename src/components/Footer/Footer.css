@@ -19,7 +19,7 @@
   margin: 0 10px;
 }
 .footer img {
-  width: 3%;
+  width: 2.5%;
 }
 @media (max-width: 450px) {
   .footer {
@@ -27,5 +27,8 @@
   }
   .footer span {
     margin: 0 20px 0 80px;
+  }
+  .footer img {
+    width: 10%;
   }
 }
