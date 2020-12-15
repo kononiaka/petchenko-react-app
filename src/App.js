@@ -31,7 +31,7 @@ class App extends Component {
           id: "viktoria_g",
           name: "Viktoria_G",
           src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6318.jpg"),
-          poster: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6328.jpg"),
+          poster: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6446.jpg"),
           eventDate: "No Event Date",
           status: "Published",
           photos: [
@@ -282,6 +282,7 @@ class App extends Component {
     menuOpen: false,
     imageOpen: false,
     srcOpen: null,
+    activeElement: {},
   };
   toggleMenu = () => {
     this.setState((prevState) => {
@@ -297,12 +298,12 @@ class App extends Component {
     }));
   };
 
-  activeElement;
-
   blockClick = (id) => {
-    this.activeElement = this.state.collection.beauty_fashion.find(
-      (element) => element.id === id
-    );
+    this.setState((state) => ({
+      activeElement: this.state.collection.beauty_fashion.find(
+        (element) => element.id === id
+      ),
+    }));
   };
 
   render() {
@@ -316,9 +317,9 @@ class App extends Component {
                 imageClick={this.openImage}
                 menuOpen={this.state.menuOpen}
                 toggleMenu={this.toggleMenu}
-                photos={this.activeElement.photos}
-                name={this.activeElement.name}
-                poster={this.activeElement.poster}
+                photos={this.state.activeElement.photos}
+                name={this.state.activeElement.name}
+                poster={this.state.activeElement.poster}
               ></BlockImage>
             )}
           ></Route>

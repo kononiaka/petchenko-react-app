@@ -27,7 +27,7 @@ const BigFoto = (props) => {
       ? "50%"
       : urlPath === "/collection/:id" && screenWidth < 451
       ? ""
-      : "";
+      : "cover";
 
   const mainText =
     screenWidth < 451 ? "Petchenko Anatoliy" : `Petchenko  Anatoliy`;

@@ -45,11 +45,21 @@
 
 @media (max-width: 450px) {
   .block-container {
-    margin-top: -50px;
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .block-container:nth-child(4n + 1) {
+    display: inline-block;
+    margin-left: 0px;
+  }
+
+  .block-container:nth-child(-n + 4) {
+    margin-top: 0px;
   }
   .block-container img {
     display: inline-block;
-    width: 90%;
+    width: 100%;
   }
   .blockContainer_name {
     color: rgb(83, 80, 80);
