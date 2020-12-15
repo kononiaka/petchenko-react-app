@@ -3,9 +3,17 @@
   text-transform: uppercase;
   margin: 10px 0;
 }
-.block-container {
+.block-container:nth-child(-n + 4) {
+  margin-top: -25px;
+}
+.block-container:nth-child(4n + 1) {
   display: inline-block;
   margin-left: 150px;
+}
+.block-container {
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 .block-container img {
@@ -16,9 +24,14 @@
   visibility: hidden;
 }
 
-.block-container a:hover .block-container_name {
-  text-decoration: none;
+.block-container:hover .block-container_name {
+  color: black;
 }
+
+.block-container:hover .inline {
+  color: black;
+}
+
 .inline:first-child {
   margin-left: 0;
 }

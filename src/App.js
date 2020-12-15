@@ -103,14 +103,176 @@ class App extends Component {
         {
           id: "zelen",
           name: "Zelen",
-          src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5003.jpg"),
-          poster: require("./img/Collection/Fashion & Beauty/Zelen/JB1A4983.jpg"),
+          src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A4983.jpg"),
+          poster: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5003.jpg"),
           eventDate: "No Event Date",
           status: "Published",
           photos: [
             {
               id: "zelen_01",
+              src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A4983.jpg"),
+            },
+            {
+              id: "zelen_02",
               src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5003.jpg"),
+            },
+            {
+              id: "zelen_03",
+              src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5010.jpg"),
+            },
+            {
+              id: "zelen_04",
+              src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5031с.jpg"),
+            },
+            {
+              id: "zelen_05",
+              src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5035c.jpg"),
+            },
+            {
+              id: "zelen_06",
+              src: require("./img/Collection/Fashion & Beauty/Zelen/JB1A5138с.jpg"),
+            },
+          ],
+        },
+        {
+          id: "vladya",
+          name: "VladaYa",
+          src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0485.jpg"),
+          poster: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0906.jpg"),
+          eventDate: "No Event Date",
+          status: "Published",
+          photos: [
+            {
+              id: "vladaya_01",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0485.jpg"),
+            },
+            {
+              id: "vladaya_02",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0582.jpg"),
+            },
+            {
+              id: "vladaya_03",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0672.jpg"),
+            },
+            {
+              id: "vladaya_04",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0790.jpg"),
+            },
+            {
+              id: "vladaya_05",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0869.jpg"),
+            },
+            {
+              id: "vladaya_07",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0921.jpg"),
+            },
+            {
+              id: "vladaya_08",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0975.jpg"),
+            },
+            {
+              id: "vladaya_09",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B1036.jpg"),
+            },
+            {
+              id: "vladaya_10",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B1038.jpg"),
+            },
+            {
+              id: "vladaya_06",
+              src: require("./img/Collection/Fashion & Beauty/VladaYa/HM7B0906.jpg"),
+            },
+          ],
+        },
+        {
+          id: "ANNkara",
+          name: "ANNkara",
+          src: require("./img/Collection/Fashion & Beauty/ANNkara/HM7B2650.jpg"),
+          poster: require("./img/Collection/Fashion & Beauty/ANNkara/HM7B2870.jpg"),
+          eventDate: "No Event Date",
+          status: "Published",
+          photos: [
+            {
+              id: "ANNkara_01",
+              src: require("./img/Collection/Fashion & Beauty/ANNkara/HM7B2650.jpg"),
+            },
+            {
+              id: "ANNkara_02",
+              src: require("./img/Collection/Fashion & Beauty/ANNkara/HM7B2687.jpg"),
+            },
+            {
+              id: "ANNkara_03",
+              src: require("./img/Collection/Fashion & Beauty/ANNkara/HM7B2722.jpg"),
+            },
+            {
+              id: "ANNkara_04",
+              src: require("./img/Collection/Fashion & Beauty/ANNkara/HM7B2818.jpg"),
+            },
+            {
+              id: "ANNkara_05",
+              src: require("./img/Collection/Fashion & Beauty/ANNkara/HM7B2870.jpg"),
+            },
+            {
+              id: "ANNkara_06",
+              src: require("./img/Collection/Fashion & Beauty/ANNkara/HM7B3060.jpg"),
+            },
+          ],
+        },
+        {
+          id: "BEVZ_underwear",
+          name: "BEVZ_underwear",
+          src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0002.jpg"),
+          poster: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0587.jpg"),
+          eventDate: "No Event Date",
+          status: "Published",
+          photos: [
+            {
+              id: "BEVZ_underwear_01",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0002.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_02",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0026.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_03",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0106.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_04",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0180.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_05",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0237.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_06",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0337.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_07",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0350.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_08",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0463.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_09",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0544.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_10",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0587.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_11",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0638.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_12",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0659.jpg"),
             },
           ],
         },
@@ -135,9 +297,11 @@ class App extends Component {
     }));
   };
 
+  activeElement;
+
   blockClick = (id) => {
-    this.state.collection.beauty_fashion.map((element) =>
-      console.log(element.name)
+    this.activeElement = this.state.collection.beauty_fashion.find(
+      (element) => element.id === id
     );
   };
 
@@ -152,13 +316,9 @@ class App extends Component {
                 imageClick={this.openImage}
                 menuOpen={this.state.menuOpen}
                 toggleMenu={this.toggleMenu}
-                photos={this.state.collection.beauty_fashion[0].photos}
-                name={this.state.collection.beauty_fashion.map(
-                  (element) => element.name
-                )}
-                poster={this.state.collection.beauty_fashion.map(
-                  (photo) => photo.poster
-                )}
+                photos={this.activeElement.photos}
+                name={this.activeElement.name}
+                poster={this.activeElement.poster}
               ></BlockImage>
             )}
           ></Route>

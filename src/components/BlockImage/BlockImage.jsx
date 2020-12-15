@@ -5,6 +5,7 @@ import Masonry from "react-masonry-component";
 import "./BlockImage.css";
 import Links from "../links/Links";
 import ToggleButton from "../ToggleButton/ToggleButton";
+import ScrollToTop from "../scrollToTop/ScrollToTop";
 
 class BlockImage extends Component {
   state = {
@@ -55,6 +56,7 @@ class BlockImage extends Component {
 
     return (
       <>
+        <ScrollToTop />
         <BigFoto bcg={this.props.poster} name={this.props.name} />
         <div className="container-custom">
           <ToggleButton

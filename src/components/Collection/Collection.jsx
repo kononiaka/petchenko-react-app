@@ -20,11 +20,11 @@ class Collection extends Component {
     const collectionBlocks = this.props.blocks.map((block) => (
       <Link
         className="block-container"
+        style={{ textDecoration: "none" }}
         key={block.id}
         to={`collection/${block.id}`}
         onClick={() => {
-          console.log(block.name);
-          this.props.blockClick(block.id);
+          this.props.blockClick(block.id, block.name);
         }}
       >
         <CollectionBlock

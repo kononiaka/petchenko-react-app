@@ -33,6 +33,7 @@ const BigFoto = (props) => {
     screenWidth < 451 ? "Petchenko Anatoliy" : `Petchenko  Anatoliy`;
 
   const scrollingAnchor = screenWidth > 451 ? 975 : 800;
+
   return (
     <>
       <div
