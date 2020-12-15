@@ -31,7 +31,7 @@ class App extends Component {
           id: "viktoria_g",
           name: "Viktoria_G",
           src: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6318.jpg"),
-          poster: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6318.jpg"),
+          poster: require("./img/Collection/Fashion & Beauty/Viktoria_G/DSC_6328.jpg"),
           eventDate: "No Event Date",
           status: "Published",
           photos: [
@@ -227,12 +227,12 @@ class App extends Component {
           status: "Published",
           photos: [
             {
-              id: "BEVZ_underwear_01",
-              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0002.jpg"),
-            },
-            {
               id: "BEVZ_underwear_02",
               src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0026.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_01",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0002.jpg"),
             },
             {
               id: "BEVZ_underwear_03",
@@ -260,10 +260,6 @@ class App extends Component {
             },
             {
               id: "BEVZ_underwear_09",
-              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0544.jpg"),
-            },
-            {
-              id: "BEVZ_underwear_10",
               src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0587.jpg"),
             },
             {
@@ -273,6 +269,10 @@ class App extends Component {
             {
               id: "BEVZ_underwear_12",
               src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0659.jpg"),
+            },
+            {
+              id: "BEVZ_underwear_10",
+              src: require("./img/Collection/Fashion & Beauty/BEVZ_underwear/DSC_0544.jpg"),
             },
           ],
         },
